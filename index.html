@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de Privacidade — Caderno CFC</title>
-<meta name="description" content="Política de privacidade do aplicativo Caderno CFC: nenhum dado é coletado, transmitido ou compartilhado. Tudo fica no aparelho.">
+<meta name="description" content="Política de privacidade do Caderno CFC: estudo local, backup manual e informações sobre atualizações pela Google Play.">
 <meta name="robots" content="index, follow">
 <style>
   :root{
@@ -76,13 +76,15 @@
   <header>
     <div class="selo">Caderno CFC · aplicativo Android</div>
     <h1>Política de Privacidade</h1>
-    <p class="data">Última atualização: 26 de julho de 2026</p>
+    <p class="data">Última atualização: 7 de outubro de 2026 · versão 1.3.1</p>
   </header>
 
   <h2>Resumo</h2>
   <div class="destaque">
-    <p>O Caderno CFC <strong>não coleta, não transmite e não compartilha nenhum dado
-    pessoal</strong>. Todo o seu conteúdo de estudo fica exclusivamente no seu aparelho.</p>
+    <p>O Caderno CFC <strong>não envia seu histórico de estudo a servidores do desenvolvedor</strong>.
+    Respostas, anotações e materiais ficam no aparelho; a exportação e o compartilhamento
+    de arquivos são iniciados por você. A consulta de atualizações usa a Google Play,
+    que trata dados técnicos próprios, conforme explicado abaixo.</p>
   </div>
 
   <h2>Dados que o aplicativo armazena (só no seu aparelho)</h2>
@@ -94,15 +96,16 @@
     <li>materiais que você mesmo enviar na seção “Conteúdo” (vídeos, áudios, mapas mentais,
         apresentações) e o registro do que foi estudado.</li>
   </ul>
-  <p>Esses dados <strong>nunca saem do aparelho</strong>. Não há servidor, não há conta de
-  usuário, não há login. O aplicativo também <strong>desativa o backup automático em nuvem do
+  <p>Esses dados não são enviados automaticamente pelo Caderno CFC. Não há servidor de histórico,
+  conta de usuário ou login na versão Android. O aplicativo também <strong>desativa o backup automático em nuvem do
   Android</strong> (<code>allowBackup=false</code>): seu histórico de estudo não é enviado ao
   Google Drive nem a qualquer outro serviço.</p>
   <p>Desinstalar o aplicativo apaga tudo — por isso o backup é <strong>manual e sob o seu
   controle</strong>, em <strong>Ajustes &amp; dados → Exportar backup</strong>: o aplicativo abre o
-  seletor de arquivos do sistema e <strong>você escolhe onde gravar</strong>. Ao trocar de aparelho
-  por transferência direta (cabo ou Wi-Fi Direct, iniciada por você), o histórico é preservado —
-  essa transferência é local, entre os dois aparelhos.</p>
+  seletor de arquivos do sistema e <strong>você escolhe onde gravar</strong>. Um provedor de arquivos
+  escolhido por você pode guardar essa cópia na nuvem, segundo as regras dele. Para trocar de
+  aparelho, use a transferência manual completa do caderno e confira a restauração;
+  não há garantia de cópia automática.</p>
 
   <h2>Permissões</h2>
   <p>O aplicativo <strong>não declara acesso à internet</strong>. Ele declara duas permissões,
@@ -128,13 +131,27 @@
   o arquivo que você escolher.</p>
 
   <h2>Conexões de rede</h2>
-  <p>O aplicativo funciona inteiramente offline. Os únicos links externos são os do bloco
-  “Encarte” (T-Visor e VenRisk); ao tocá-los, o endereço abre no <strong>navegador do seu
-  aparelho</strong>, fora do app, e passa a valer a política de privacidade do site visitado.</p>
+  <p>As funções de estudo funcionam offline. Links para fontes oficiais, páginas de apoio e
+  ferramentas do bloco “Encarte” abrem no <strong>navegador do aparelho</strong>, fora do app,
+  e estão sujeitos à política do destino. Abrir um link ou consultar/baixar atualizações requer conexão.</p>
+
+  <h2>Atualizações pela Google Play</h2>
+  <p>A partir da versão 1.3.1, o aplicativo usa a biblioteca oficial <strong>Play In-App Updates</strong>
+  para consultar versões disponíveis ao abrir/retomar o caderno ou pela opção manual em Ajustes.
+  O download e a instalação dependem de sua confirmação; você pode adiar. O caderno não baixa
+  APKs de sites externos nem envia respostas, histórico, anotações ou arquivos pessoais a essa biblioteca.</p>
+  <p>A Google Play executa seus próprios processos e, segundo sua documentação, trata metadados
+  do dispositivo, versão do aplicativo e lista de módulos e pacotes de recursos do app instalados
+  para verificar disponibilidade e tamanho da atualização. Esses dados são cifrados, não são
+  transferidos a terceiros e seguem o prazo de retenção definido pela Google. Consulte a
+  <a href="https://developer.android.com/guide/playcore/in-app-updates#data-safety">documentação de dados do serviço</a>
+  e os <a href="https://play.google.com/about/play-terms/">termos da Google Play</a>.
+  O desenvolvedor do Caderno CFC não recebe esses dados técnicos da consulta.</p>
 
   <h2>Terceiros e publicidade</h2>
-  <p>Não há <strong>redes de anúncios, rastreadores, analytics nem SDKs de terceiros</strong> — o
-  aplicativo não tem nenhuma biblioteca externa além do próprio framework do Android.</p>
+  <p>Não há <strong>redes de anúncios, rastreadores ou analytics de estudo</strong>. A biblioteca
+  externa Play In-App Updates e suas dependências oficiais são usadas apenas para o fluxo
+  de atualizações descrito acima.</p>
   <p>O que existe são dois cartões fixos de divulgação das outras ferramentas do mesmo autor
   (<strong>T-Visor</strong> e <strong>VenRisk</strong>). Eles não são personalizados, não usam seus
   dados e não sabem nada sobre você: são um texto e um link, iguais para todo mundo. Como a Play
