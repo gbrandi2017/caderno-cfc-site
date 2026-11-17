@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de Privacidade — Caderno CFC</title>
-<meta name="description" content="Política de privacidade do Caderno CFC, no Android e na web: estudo guardado no aparelho, backup manual, atualizações pela Google Play e formulários de contato da versão web.">
+<meta name="description" content="Política de privacidade do Caderno CFC, no Android e na web: estudo guardado no aparelho, backup manual, atualizações pela Google Play, pedido de acesso automático e formulários de contato da versão web.">
 <meta name="robots" content="index, follow">
 <style>
   :root{
@@ -76,7 +76,7 @@
   <header>
     <div class="selo">Caderno CFC · aplicativo Android e versão web</div>
     <h1>Política de Privacidade</h1>
-    <p class="data">Última atualização: 14 de novembro de 2026 · versão 1.3.4</p>
+    <p class="data">Última atualização: 17 de novembro de 2026 · versão 1.3.4</p>
   </header>
 
   <h2>Resumo</h2>
@@ -85,7 +85,8 @@
     nem no Android nem na web. Respostas, anotações e materiais ficam no aparelho; a exportação
     e o compartilhamento de arquivos são iniciados por você. No Android, a consulta de
     atualizações usa a Google Play. Na web, só chega ao desenvolvedor o que você mesmo enviar
-    pelos formulários de pedido de acesso, sugestão ou relato — veja a seção “Versão web”.</p>
+    pelos formulários de pedido de acesso, sugestão ou relato, e um aviso único de que seu código
+    de acesso foi ativado — veja a seção “Versão web”.</p>
   </div>
 
   <h2>Dados que o aplicativo armazena (só no seu aparelho)</h2>
@@ -159,15 +160,31 @@
   Como todo servidor, ele pode registrar dados técnicos de acesso, como endereço IP e navegador,
   conforme a <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement">declaração de privacidade do GitHub</a>.
   O desenvolvedor do Caderno CFC não recebe esses registros.</p>
-  <p><strong>Formulários.</strong> Três formulários enviam dados, sempre por ação sua, pelo serviço
+  <p><strong>Pedido de acesso e envio do código.</strong> O formulário da página inicial vai para o
+  serviço de acessos do Caderno CFC, um programa do Google Apps Script na conta Google do
+  desenvolvedor. Ele registra o pedido numa planilha do Google Planilhas, separa um código de
+  acesso para você e o envia pelo Gmail do desenvolvedor, na hora. Ficam registrados: nome,
+  e-mail, exame informado, data do pedido, código emitido, datas de envio do e-mail e situação
+  do acesso (ativo ou revogado). O mesmo e-mail que pedir de novo recebe o mesmo código. Os
+  serviços do Google podem processar esses dados fora do Brasil (transferência internacional),
+  segundo a <a href="https://policies.google.com/privacy?hl=pt-BR">política de privacidade do Google</a>.
+  Se o serviço automático estiver fora do ar, o pedido segue pelo Formspree, descrito abaixo, e o
+  código é enviado manualmente.</p>
+  <p><strong>Aviso de ativação.</strong> Quando seu código abre o caderno pela primeira vez num
+  navegador, o site avisa o serviço de acessos uma única vez, para o desenvolvedor saber que o
+  acesso foi usado e em quantos navegadores. O aviso leva só a referência do código — os mesmos
+  12 caracteres que já aparecem no arquivo público de chaves do site —, sem cookies, respostas,
+  histórico, anotações ou dados do aparelho. Se o aviso falhar, o caderno funciona igual.</p>
+  <p><strong>Formulários do Formspree.</strong> Os formulários de dentro do app web, e o pedido de
+  acesso quando o serviço automático não responde, enviam dados sempre por ação sua pelo serviço
   Formspree (Formspree, Inc., com servidores nos Estados Unidos — portanto, com transferência
   internacional de dados):</p>
   <table>
     <tr><th>Formulário</th><th>O que é enviado</th><th>Para quê</th></tr>
     <tr>
-      <td>Pedido de acesso (página inicial)</td>
+      <td>Pedido de acesso, só se o serviço automático falhar</td>
       <td>nome, e-mail e o exame que você estuda</td>
-      <td>avaliar o pedido e mandar seu código por e-mail</td>
+      <td>mandar seu código por e-mail manualmente</td>
     </tr>
     <tr>
       <td>Sugestão ou problema (dentro do app web)</td>
@@ -182,12 +199,13 @@
     </tr>
   </table>
   <p>Nenhum formulário envia respostas, histórico, anotações ou arquivos de estudo. As mensagens
-  ficam na conta do Formspree e no e-mail do desenvolvedor até serem apagadas; você pode pedir a
-  exclusão pelo contato abaixo. Para poder revogar um acesso, o desenvolvedor mantém o nome
-  associado a cada código emitido enquanto esse acesso existir.</p>
+  do Formspree ficam na conta do Formspree e no e-mail do desenvolvedor até serem apagadas.
+  <strong>Por quanto tempo:</strong> o registro do seu acesso fica na planilha enquanto o acesso
+  existir, e é apagado um ano depois de uma revogação; o registro de cada pedido é apagado depois
+  de 180 dias. Você pode pedir a exclusão antes, pelo contato abaixo.</p>
   <p><strong>Sem rastreamento.</strong> A versão web não usa analytics, cookies de publicidade
-  nem rastreadores. Links para fontes oficiais e materiais externos abrem o site de destino,
-  sujeito à política dele.</p>
+  nem rastreadores. O único aviso automático é o de ativação descrito acima. Links para fontes
+  oficiais e materiais externos abrem o site de destino, sujeito à política dele.</p>
 
   <h2>Terceiros e publicidade</h2>
   <p>Não há <strong>redes de anúncios, rastreadores ou analytics de estudo</strong>. A biblioteca
