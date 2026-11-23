@@ -76,7 +76,7 @@
   <header>
     <div class="selo">Caderno CFC · aplicativo Android e versão web</div>
     <h1>Política de Privacidade</h1>
-    <p class="data">Última atualização: 17 de novembro de 2026 · versão 1.3.4</p>
+    <p class="data">Última atualização: 23 de novembro de 2026 · versão 1.3.6</p>
   </header>
 
   <h2>Resumo</h2>
@@ -156,6 +156,10 @@
   (localStorage e IndexedDB). O código de acesso que você digita e a chave que libera o conteúdo
   também ficam guardados ali, para não pedir o código a cada visita. Para apagar tudo, use a opção
   de limpar os dados do site no navegador — antes, exporte um backup se quiser manter o histórico.</p>
+  <p><strong>Prova de amostra.</strong> Uma prova inteira abre sem código e sem cadastro, para você conhecer o
+  caderno. Ela não envia nada: o que você responde fica só no armazenamento do navegador, separado
+  do histórico do caderno completo, e passa para ele quando você entra com um código neste mesmo
+  navegador.</p>
   <p><strong>Hospedagem.</strong> Os arquivos do site são servidos pelo GitHub Pages (GitHub, Inc.).
   Como todo servidor, ele pode registrar dados técnicos de acesso, como endereço IP e navegador,
   conforme a <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement">declaração de privacidade do GitHub</a>.
@@ -165,16 +169,19 @@
   desenvolvedor. Ele registra o pedido numa planilha do Google Planilhas, separa um código de
   acesso para você e o envia pelo Gmail do desenvolvedor, na hora. Ficam registrados: nome,
   e-mail, exame informado, data do pedido, código emitido, datas de envio do e-mail e situação
-  do acesso (ativo ou revogado). O mesmo e-mail que pedir de novo recebe o mesmo código. Os
+  do acesso (ativo ou revogado). O mesmo e-mail que pedir de novo recebe o mesmo código, e endereços
+  que caem na mesma caixa de entrada (como nome+algo@gmail.com) contam como o mesmo e-mail. Os
   serviços do Google podem processar esses dados fora do Brasil (transferência internacional),
   segundo a <a href="https://policies.google.com/privacy?hl=pt-BR">política de privacidade do Google</a>.
   Se o serviço automático estiver fora do ar, o pedido segue pelo Formspree, descrito abaixo, e o
   código é enviado manualmente.</p>
   <p><strong>Aviso de ativação.</strong> Quando seu código abre o caderno pela primeira vez num
   navegador, o site avisa o serviço de acessos uma única vez, para o desenvolvedor saber que o
-  acesso foi usado e em quantos navegadores. O aviso leva só a referência do código — os mesmos
-  12 caracteres que já aparecem no arquivo público de chaves do site —, sem cookies, respostas,
-  histórico, anotações ou dados do aparelho. Se o aviso falhar, o caderno funciona igual.</p>
+  acesso foi usado e em quantos navegadores. O aviso leva a referência do código — os mesmos
+  12 caracteres que já aparecem no arquivo público de chaves do site — e uma comprovação de que o
+  navegador tem o código: outro resumo criptográfico dele, que não revela o código e serve só para o
+  serviço não contar avisos falsos. Vai sem cookies, respostas, histórico, anotações ou dados do
+  aparelho. Se o aviso falhar, o caderno funciona igual.</p>
   <p><strong>Formulários do Formspree.</strong> Os formulários de dentro do app web, e o pedido de
   acesso quando o serviço automático não responde, enviam dados sempre por ação sua pelo serviço
   Formspree (Formspree, Inc., com servidores nos Estados Unidos — portanto, com transferência
